@@ -1,0 +1,13 @@
+{
+  "name"            : "iit-jsintro",
+  "version"         : "0.0.1",
+  "description"     : "JavaScript Introduction for CS445 (IIT)",
+  "scripts"         : {
+                        "test": "vows test/*_test.js --spec"
+                      },
+  "directories"     : { "bin": "./bin", "lib": "./lib", "test": "./test" },
+  "dependencies"    : {},
+  "devDependencies" : { "vows": "0.5.x" },
+  "engines"         : { "node": "~v0.6.8" },
+  "private"         : true
+}
