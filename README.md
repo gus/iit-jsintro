@@ -30,17 +30,20 @@
 
 ## Implementations
 
-* v8 / node.js
-* spidermonkey
-* rhino
+* [V8](http://code.google.com/p/v8/) (Chrome / node.js)
+* [Spidermonkey](https://developer.mozilla.org/en/SpiderMonkey) (FireFox)
+* [Nitro/SquirrelFish](http://en.wikipedia.org/wiki/JavaScript_engine#Safari) (Safari)
+* [Rhino](http://www.mozilla.org/rhino/) (Java)
 
 ## Testing frameworks
 
-* riot.js - http://github.com/alexyoung/riotjs
-* qunit - http://docs.jquery.com/QUnit
+* [Vows](http://vowsjs.org)
+* [Jasmine](http://pivotal.github.com/jasmine/)
+* [riot.js](http://github.com/alexyoung/riotjs)
 
 ## See also
 
-http://javascript.crockford.com/
-http://dailyjs.com/
-http://oreilly.com/catalog/9780596517748 - JavaScript: The Good Parts
+* [Douglas Crockford](http://javascript.crockford.com/)
+* [DailyJS Blog](http://dailyjs.com/)
+* [JavaScript: The Good Parts](http://oreilly.com/catalog/9780596517748)
+
