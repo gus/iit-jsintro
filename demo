@@ -2,24 +2,34 @@
 
 var demos = {};
 
+function whoops(msg) {
+  util.puts("! \033[31m" + msg + "\033[0m");
+}
+
 global.util = require('util');
 global.define = function (name, func) {
-  demos[name] = func;
+  if (demos[name]) {
+    whoops("Demo " + name + " cannot be defined");
+  } else {
+    demos[name] = func;
+  }
 };
 
 require('./lib');
 
 var demoName = process.argv[2];
-
 if (demoName === undefined) {
-  sys.puts("A demo to run must be specified.");
+  whoops("A demo to run must be specified.\n");
+  for (var demo in demos) {
+    util.puts("- " + demo);
+  }
   process.exit(1);
 } else if (demos[demoName] === undefined) {
-  sys.puts("Demo " + demoName + " is not defined.");
+  whoops("Demo " + demoName + " is not defined.");
   process.exit(1);
 } else {
   console.log("\n\033[32mEXAMPLE\033[0m \033[35m" + demoName + "\033[0m");
   demos[demoName].apply(null, process.argv.slice(3));
-  console.log("");
+console.log("");
 }
 

@@ -1,8 +1,7 @@
 /*jslint white: false plusplus: false onevar: false browser: true evil: true*/
 /*global window: true*/
 (function(global) {
-  var sys = require("sys");
-  var print = sys.puts;
+  var print = util.puts;
   
   var Riot = {
     results:  [],
@@ -586,3 +585,4 @@
     }
   }
 })(typeof window === 'undefined' ? this : window);
+
