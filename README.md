@@ -2,18 +2,28 @@
 
 ## Heritage
 
-* Nothing to do with Java, just a marketing ploy
-* Around since 1995
-* Object oriented
+* Around since 1995, formalized as [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript)
+  * Nothing to do with Java, just a marketing ploy
+* Imperative
+* Object-oriented
+  * Uses prototypal inheritance versus classical inheritance
 * Functional
-* Owes credit to languages like Self, Lisp
-* Uses prototypal inheritance versus classical inheritance
+* Owes design credit to languages like Self, Lisp, and C (syntax)
+
+## Implementations
+
+It's not going anywhere: browser, server-side. Might as well embrace it.
+
+* [V8](http://code.google.com/p/v8/) (Chrome / node.js)
+* [Spidermonkey](https://developer.mozilla.org/en/SpiderMonkey) (FireFox)
+* [Nitro/SquirrelFish](http://en.wikipedia.org/wiki/JavaScript_engine#Safari) (Safari)
+* [Rhino](http://www.mozilla.org/rhino/) (Java)
 
 ## Run-through
 
+* literals
 * typing
 * assignment
-* literals
 * control structures
 * functions
 * exceptions
@@ -23,17 +33,12 @@
 
 ## Examples
 
+* hello, world
+* a Cup?
 * observer pattern with objects
 * observer pattern with functions
 * singleton pattern
 * node.js http server
-
-## Implementations
-
-* [V8](http://code.google.com/p/v8/) (Chrome / node.js)
-* [Spidermonkey](https://developer.mozilla.org/en/SpiderMonkey) (FireFox)
-* [Nitro/SquirrelFish](http://en.wikipedia.org/wiki/JavaScript_engine#Safari) (Safari)
-* [Rhino](http://www.mozilla.org/rhino/) (Java)
 
 ## Testing frameworks
 
