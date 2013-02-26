@@ -14,5 +14,5 @@ var server = http.createServer(function (request, response) {
 
 server.listen(8000);
 
-util.puts("Server running at http://127.0.0.1:8000/");
+util.log("Server running at http://127.0.0.1:8000/");
 
