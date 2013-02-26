@@ -30,6 +30,6 @@ if (demoName === undefined) {
 } else {
   console.log("\n\033[32mEXAMPLE\033[0m \033[35m" + demoName + "\033[0m");
   demos[demoName].apply(null, process.argv.slice(3));
-console.log("");
+  console.log("");
 }
 

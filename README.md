@@ -6,6 +6,7 @@
 * Around since 1995, formalized as [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript)
   * Nothing to do with Java, just a marketing ploy
 * Imperative
+* Interpreted
 * Object-oriented
   * Uses prototypal inheritance versus classical inheritance
 * Functional
@@ -34,18 +35,17 @@ It's not going anywhere: browser, server-side. Might as well embrace it.
 
 ## Examples
 
-* hello, world
-* a Cup?
 * observer pattern with objects
 * observer pattern with functions
 * singleton pattern
 * node.js http server
+* hello, world
+* a Cup?
 
 ## Testing frameworks
 
-* [Vows](http://vowsjs.org)
 * [Jasmine](http://pivotal.github.com/jasmine/)
-* [riot.js](http://github.com/alexyoung/riotjs)
+* [Mocha](http://visionmedia.github.com/mocha/)
 
 ## See also
 
