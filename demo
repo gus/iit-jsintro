@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 
+global.util = require('util');
+
 var demos = {};
 
-function whoops(msg) {
-  util.puts("! \033[31m" + msg + "\033[0m");
-}
-
-global.util = require('util');
 global.define = function (name, func) {
   if (demos[name]) {
     whoops("Demo " + name + " cannot be defined");
@@ -15,21 +12,30 @@ global.define = function (name, func) {
   }
 };
 
+function pcolor(id, msg) { return "\033[" + id + "m" + msg + "\033[0m"; }
+global.red    = function (msg) { return pcolor(31, msg); };
+global.green  = function (msg) { return pcolor(32, msg); };
+global.purple = function (msg) { return pcolor(35, msg); };
+global.cyan   = function (msg) { return pcolor(36, msg); };
+
+function whoops(msg) {
+  util.puts(red("! \033[31m" + msg + "\033[0m"));
+}
+
+function info(label, msg) {
+  util.puts("\n" + green(label) + " " + purple(msg));
+}
+
 require('./lib');
 
-var demoName = process.argv[2];
-if (demoName === undefined) {
+var demoName = process.argv[2],
+    demo = demos[demoName];
+if (!demo) {
   whoops("A demo to run must be specified.\n");
-  for (var demo in demos) {
-    util.puts("- " + demo);
-  }
-  process.exit(1);
-} else if (demos[demoName] === undefined) {
-  whoops("Demo " + demoName + " is not defined.");
-  process.exit(1);
+  for (var demo in demos) { util.puts("- " + demo); }
 } else {
-  console.log("\n\033[32mEXAMPLE\033[0m \033[35m" + demoName + "\033[0m");
+  info("EXAMPLE", demoName);
   demos[demoName].apply(null, process.argv.slice(3));
-  console.log("");
 }
+console.log("");
 
