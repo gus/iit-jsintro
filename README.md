@@ -4,6 +4,7 @@
 ## Heritage
 
 * Around since 1995, formalized as [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript)
+  * Some [standards](http://www.ecma-international.org/publications/standards/Standard.htm)
   * Nothing to do with Java, just a marketing ploy
 * Imperative
 * Interpreted
@@ -24,8 +25,8 @@ It's not going anywhere: browser, server-side. Might as well embrace it.
 ## Run-through
 
 * literals
-* typing
 * assignment
+* typing
 * control structures
 * functions
 * exceptions
@@ -35,12 +36,10 @@ It's not going anywhere: browser, server-side. Might as well embrace it.
 
 ## Examples
 
-* observer pattern with objects
 * observer pattern with functions
 * singleton pattern
 * node.js http server
-* hello, world
-* a Cup?
+  * hello, world
 
 ## Testing frameworks
 
