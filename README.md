@@ -43,7 +43,7 @@ It's not going anywhere: browser, server-side. Might as well embrace it.
 
 ## Testing frameworks
 
-* [Jasmine](http://pivotal.github.com/jasmine/)
+* [Jasmine](https://jasmine.github.io/)
 * [Mocha](http://visionmedia.github.com/mocha/)
 
 ## See also
