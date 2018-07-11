@@ -44,7 +44,7 @@ It's not going anywhere: browser, server-side. Might as well embrace it.
 ## Testing frameworks
 
 * [Jasmine](https://jasmine.github.io/)
-* [Mocha](http://visionmedia.github.com/mocha/)
+* [Mocha](https://mochajs.org/)
 
 ## See also
 
